@@ -8,3 +8,5 @@ on:
 jobs:
   node-publish:
     uses: ./.github/workflows/node-publish.yml
+    secrets:
+      npm_token: ${{ secrets.NPM_TOKEN }}
