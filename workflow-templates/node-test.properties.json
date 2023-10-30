@@ -1,6 +1,7 @@
 {
   "name": "Fluidware Node Workflow",
-  "description": "Fluidware CI starter workflow for node libraries and applications",
+  "description": "Fluidware CI workflow for checking node libraries and applications",
+  "icon": "octicon beaker",
   "categories": [
     "Node"
   ],
