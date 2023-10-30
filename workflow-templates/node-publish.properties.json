@@ -1,7 +1,7 @@
 {
-  "name": "Fluidware Release Node Workflow",
+  "name": "Fluidware Publish to NPM Workflow",
   "description": "Fluidware CI workflow to publish node libraries",
-  "icon": "octicon tag",
+  "iconName": "octicon tag",
   "categories": [
     "Node"
   ],

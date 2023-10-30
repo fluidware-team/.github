@@ -1,9 +1,10 @@
-name: release to npm
+name: publish to npm
 
 on:
-  push:
-    tags:
-      - '*.*.*'
+  workflow_call:
+    secrets:
+      npm_token:
+        required: true
 
 jobs:
   build:
@@ -18,5 +19,5 @@ jobs:
       - run: npm run lint
       - run: npm test
       - run: npm run compile
-      - run: npm config set -- '//registry.npmjs.org/:_authToken' "${{ secrets.NPM_TOKEN }}"
+      - run: npm config set -- '//registry.npmjs.org/:_authToken' "${{ secrets.npm_token }}"
       - run: npm publish --access public

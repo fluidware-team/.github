@@ -1,0 +1,10 @@
+name: publish to npm
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+jobs:
+  node-publish:
+    uses: ./.github/workflows/node-publish.yml
