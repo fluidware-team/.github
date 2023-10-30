@@ -1,7 +1,6 @@
 name: node lint test compile
 
-on:
-  workflow_call: {}
+on: workflow_call
 
 jobs:
   lint-test-compile:
