@@ -1,0 +1,10 @@
+{
+  "name": "Fluidware Node Workflow",
+  "description": "Fluidware CI starter workflow for node libraries and applications",
+  "categories": [
+    "Node"
+  ],
+  "filePatterns": [
+    "package.json$"
+  ]
+}
